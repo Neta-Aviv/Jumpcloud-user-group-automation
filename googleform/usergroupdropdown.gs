@@ -3,6 +3,7 @@ const JUMPCLOUD_API_KEY = 'jca_4BLoFAUhWchMnigGPs8ncWSA79F9Ubd8KPjb';
 const JUMPCLOUD_BASE_URL = 'https://console.jumpcloud.com/api';
 
 function updateUserGroupDropdownInForm() {
+// This function makes sure the form is always updated with the user group available in jumpcloud 
   const form = FormApp.openById(FORM_ID);
   const dropdownTitle = 'Select User Group:'; // Must match the title of your form dropdown question
   
