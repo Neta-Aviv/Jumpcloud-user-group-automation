@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 40px;
+      }
+      textarea {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+      button {
+        background-color: #d9534f;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+      button:hover {
+        background-color: #c9302c;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Reject Access Request</h2>
+    <p>Please provide a reason for rejecting this request:</p>
+    <form method="post" action="https://script.google.com/a/macros/techsee.me/s/AKfycbzB7lgjjqldRU9BjPOLEJTl9kuQpb3OdrrLVsXH7ljSNrugdQ4XBvCHaxC_CUrHQVbtmg/exec">
+      <textarea name="reason" required placeholder="Enter reason here..."></textarea>
+      <input type="hidden" name="row" value="<?= row ?>">
+      <input type="hidden" name="action" value="rejectSubmit">
+      <br>
+      <button type="submit">Submit Rejection</button>
+    </form>
+  </body>
+</html>
